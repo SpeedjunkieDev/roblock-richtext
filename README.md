@@ -3,7 +3,7 @@
 ## you need rojo to use this unless you import the files manually
 
 ```lua
-local richtext  = import "richtext"
+local richtext  = require(path_to_richtext_module)
 
 local mytext    = richtext.new("<b>Hello, <i>world!</i> My name is </b><u>Muneeb</u>")
 mytext(1)       -- "<b>H</b>"
