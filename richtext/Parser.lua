@@ -17,6 +17,8 @@ function parser.new()
         while lexer:available() do
             lexer:read_next()
         end
+        
+        lexer:flush()
 
         local tokens = dict.builder(lexer.tokens)
             :map(function(e)
